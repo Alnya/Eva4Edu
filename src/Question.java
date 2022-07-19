@@ -1,11 +1,11 @@
-public class Problem {
+public class Question {
     private String name;
     private int level;
 
-    public Problem() {
+    public Question() {
     }
 
-    public Problem(String name) {
+    public Question(String name) {
         this.name = name;
     }
 }
