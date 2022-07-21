@@ -1,17 +1,17 @@
 public class Choice {
-    private String groupId;
+    private String questionId;
     private String text;
 
     public Choice() {
     }
 
-    public Choice(String groupId, String text) {
-        this.groupId = groupId;
+    public Choice(String questionId, String text) {
+        this.questionId = questionId;
         this.text = text;
     }
 
-    public String getGroupId() {
-        return this.groupId;
+    public String getQuestionId() {
+        return this.questionId;
     }
 
     public String getText() {
