@@ -3,6 +3,12 @@ public class Question {
     private String name;
     private int level;
 
+    /**
+     * Question constructor
+     * id is unique so that the constructor must include id.
+     *
+     * @param id the unique number of a question.
+     */
     public Question(String id) {
         this.id = id;
     }
