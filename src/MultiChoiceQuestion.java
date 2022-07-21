@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MultiChoiceQuestion extends Question {
-    private List<String> choices = new ArrayList<>();
+    private List<Choice> choices = new ArrayList<>();
 
     public MultiChoiceQuestion() {
     }
@@ -11,11 +11,11 @@ public class MultiChoiceQuestion extends Question {
         super.setName(name);
     }
 
-    public void setChoices(List<String> choices) {
+    public void setChoices(List<Choice> choices) {
         this.choices = choices;
     }
 
-    public List<String> getChoices() {
+    public List<Choice> getChoices() {
         return this.choices;
     }
 }
