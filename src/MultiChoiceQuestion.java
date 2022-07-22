@@ -4,6 +4,7 @@ import java.util.List;
 public class MultiChoiceQuestion extends Question {
     private List<Choice> choices = new ArrayList<>();
     private String text;
+    private Answer answer;
 
     public MultiChoiceQuestion(String id) {
         super(id);
@@ -23,12 +24,20 @@ public class MultiChoiceQuestion extends Question {
         super.setLevel(level);
     }
 
+    public void addChoices(Choice choice) {
+        this.choices.add(choice);
+    }
+
     public void setChoices(List<Choice> choices) {
         this.choices = choices;
     }
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public void setAnswer(Answer answer) {
+        this.answer = answer;
     }
 
     @Override
