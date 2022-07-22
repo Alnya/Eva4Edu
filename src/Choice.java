@@ -2,12 +2,12 @@ public class Choice {
     private String questionId;
     private String text;
 
-    public Choice() {
-    }
+    private final boolean isAnswer;
 
-    public Choice(String questionId, String text) {
+    public Choice(String questionId, String text, boolean isAnswer) {
         this.questionId = questionId;
         this.text = text;
+        this.isAnswer = isAnswer;
     }
 
     public String getQuestionId() {
@@ -16,5 +16,9 @@ public class Choice {
 
     public String getText() {
         return this.text;
+    }
+
+    public boolean isAnswer() {
+        return this.isAnswer;
     }
 }
