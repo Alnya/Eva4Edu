@@ -3,6 +3,7 @@ import java.util.List;
 
 public class MultiChoiceQuestion extends Question {
     private List<Choice> choices = new ArrayList<>();
+    private String text;
 
     public MultiChoiceQuestion(String id) {
         super(id);
@@ -26,7 +27,30 @@ public class MultiChoiceQuestion extends Question {
         this.choices = choices;
     }
 
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    @Override
+    public String getId() {
+        return super.getId();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public int getLevel() {
+        return super.getLevel();
+    }
+
     public List<Choice> getChoices() {
         return this.choices;
+    }
+
+    public String getText() {
+        return this.text;
     }
 }
