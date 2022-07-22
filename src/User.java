@@ -1,12 +1,17 @@
 public class User {
-    private String id;
+    private final String id;
     private String name;
 
-    public User() {
+    public User(String id) {
+        this.id = id;
     }
 
     public User(String id, String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -18,11 +23,4 @@ public class User {
         return this.name;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
