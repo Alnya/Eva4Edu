@@ -62,4 +62,8 @@ public class MultiChoiceQuestion extends Question {
     public String getText() {
         return this.text;
     }
+
+    public Answer getAnswer() {
+        return this.answer;
+    }
 }
