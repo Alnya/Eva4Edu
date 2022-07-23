@@ -6,6 +6,7 @@ Evaluation for Education of TDU-Rating.
 ## Installation
 
 ```
+git clone https://github.com/Alnya/Eva4Edu
 ```
 
 ## Usage
