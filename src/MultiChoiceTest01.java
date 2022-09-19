@@ -38,9 +38,9 @@ public class MultiChoiceTest01 {
         Choice choice1 = new Choice("q01", "apple", true);
         Choice choice2 = new Choice("q01", "banana", false);
         Choice choice3 = new Choice("q01", "chocolate", false);
-        mQuestion.addChoices(choice1);
-        mQuestion.addChoices(choice2);
-        mQuestion.addChoices(choice3);
+        mQuestion.addChoice(choice1);
+        mQuestion.addChoice(choice2);
+        mQuestion.addChoice(choice3);
         Answer answer = new Answer("q01", "ìöÇ¶ÇÕappleÇ≈Ç∑ÅB\n");
         mQuestion.setAnswer(answer);
         map.put("multiChoiceQuestion", mQuestion);
