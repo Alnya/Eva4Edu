@@ -31,7 +31,7 @@ public class MultiChoiceTest01 {
         map.put("user", user);
 
         MultiChoiceQuestion mQuestion = new MultiChoiceQuestion("q01", "q01");
-        mQuestion.setLevel(3);
+//        mQuestion.setLevel(3);
         mQuestion.setText(
             "apple,banana,chocolateの三つの選択肢があります。\n" +
                 "appleを選んでください。\n");

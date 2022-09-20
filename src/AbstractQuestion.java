@@ -1,7 +1,7 @@
 public abstract class AbstractQuestion implements Question {
     private String id;
     private String name;
-    private int level = 0;
+    private Level level;
 
     public AbstractQuestion(String id, String name) {
         this.id = id;
@@ -11,7 +11,7 @@ public abstract class AbstractQuestion implements Question {
         this.name = name;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(Level level) {
         this.level = level;
     }
 
@@ -23,7 +23,7 @@ public abstract class AbstractQuestion implements Question {
         return this.name;
     }
 
-    public int getLevel() {
+    public Level getLevel() {
         return this.level;
     }
 }

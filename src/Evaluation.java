@@ -15,7 +15,8 @@ public class Evaluation {
             Question question = this.questionList.get(i);
             UserResponse userResponse = this.userResponseList.get(i);
             if (userResponse.isAnswer()) {
-                result.addPoint(question.getLevel());
+                Level level = question.getLevel();
+                result.addPoint(level.getPoint());
             }
         }
         return result;

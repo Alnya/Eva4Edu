@@ -1,11 +1,11 @@
 public interface Question {
     public void setName(String name);
 
-    public void setLevel(int level); //Levelオブジェクトを作る
+    public void setLevel(Level level);
 
     public String getId();
 
     public String getName();
 
-    public int getLevel();
+    public Level getLevel();
 }

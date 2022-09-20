@@ -1,15 +1,15 @@
 public class Result {
-    private int point = 0;
+    private double point = 0;
 
     public Result() {
 
     }
 
-    public void addPoint(int point){
+    public void addPoint(double point) {
         this.point += point;
     }
 
-    public int getPoint() {
+    public double getPoint() {
         return this.point;
     }
 }
