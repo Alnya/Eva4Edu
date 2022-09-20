@@ -1,4 +1,4 @@
-public class Choice {
+public class Choice implements UserResponse{
     private String questionId;
     private String text;
 
