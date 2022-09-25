@@ -1,5 +1,8 @@
+import java.util.List;
+
 public class Result {
     private double point = 0;
+    private List<Boolean> isCorrect;
 
     public Result() {
 
@@ -11,5 +14,13 @@ public class Result {
 
     public double getPoint() {
         return this.point;
+    }
+
+    public void addCorrect(boolean isCorrect) {
+        this.isCorrect.add(isCorrect);
+    }
+
+    public List<Boolean> getIsCorrect() {
+        return this.isCorrect;
     }
 }
