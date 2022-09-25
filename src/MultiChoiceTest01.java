@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,15 @@ public class MultiChoiceTest01 {
         }
         Answer answer = mQuestion.getAnswer();
         println("answer:" + answer.getText());
+        UserResponse userResponse = (UserResponse) map.get("userResponse");
+        List<UserResponse> userResponseList = new ArrayList<>();
+        userResponseList.add(userResponse);
+        List<Question> questionList = new ArrayList<>();
+        questionList.add(mQuestion);
+        Evaluation evaluation = new Evaluation(questionList, userResponseList);
+        Result result = evaluation.run();
+        println("\nEvaluate");
+        println("result point: " + result.getPoint());
     }
 
     public static Map<String, Object> getData() {
@@ -45,6 +55,8 @@ public class MultiChoiceTest01 {
         Answer answer = new Answer("q01", "ìöÇ¶ÇÕappleÇ≈Ç∑ÅB\n");
         mQuestion.setAnswer(answer);
         map.put("multiChoiceQuestion", mQuestion);
+        AbstractUserResponse userResponse = new AbstractUserResponse("q01", true);
+        map.put("userResponse", userResponse);
         return map;
     }
 
