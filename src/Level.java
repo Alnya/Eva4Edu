@@ -5,6 +5,10 @@ public class Level {
     private double point;
     private Map<String, List<String>> tag;
 
+    public Level(double point) {
+        this.point = point;
+    }
+
     public Level(double point, Map<String, List<String>> tag) {
         this.point = point;
         this.tag = tag;

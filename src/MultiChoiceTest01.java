@@ -14,7 +14,7 @@ public class MultiChoiceTest01 {
             (MultiChoiceQuestion) map.get("multiChoiceQuestion");
         println("questionId:" + mQuestion.getId());
         println("questionName:" + mQuestion.getName());
-        println("questionLevel:" + mQuestion.getLevel());
+        println("questionLevel:" + mQuestion.getLevel().getPoint());
         println("questionText:" + mQuestion.getText());
         List<Choice> choices = mQuestion.getChoices();
         for (Choice choice : choices) {
@@ -31,7 +31,8 @@ public class MultiChoiceTest01 {
         map.put("user", user);
 
         MultiChoiceQuestion mQuestion = new MultiChoiceQuestion("q01", "q01");
-//        mQuestion.setLevel(3);
+        Level level = new Level(3.0);
+        mQuestion.setLevel(level);
         mQuestion.setText(
             "apple,banana,chocolateの三つの選択肢があります。\n" +
                 "appleを選んでください。\n");
