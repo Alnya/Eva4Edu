@@ -18,7 +18,7 @@ public class Choice implements UserResponse{
         return this.text;
     }
 
-    public boolean isAnswer() {
+    public boolean isCorrect() {
         return this.isAnswer;
     }
 }

@@ -19,7 +19,7 @@ public class MultiChoiceTest01 {
         List<Choice> choices = mQuestion.getChoices();
         for (Choice choice : choices) {
             println("choice:" + choice.getText() +
-                "  isAnswer?:" + choice.isAnswer());
+                "  isAnswer?:" + choice.isCorrect());
         }
         Answer answer = mQuestion.getAnswer();
         println("answer:" + answer.getText());
