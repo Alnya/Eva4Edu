@@ -55,8 +55,8 @@ public class MultiChoiceTest01 {
         Answer answer = new Answer("q01", "ìöÇ¶ÇÕappleÇ≈Ç∑ÅB\n");
         mQuestion.setAnswer(answer);
         map.put("multiChoiceQuestion", mQuestion);
-        AbstractUserResponse userResponse = new AbstractUserResponse("q01", true);
-        map.put("userResponse", userResponse);
+//        AbstractUserResponse userResponse = new AbstractUserResponse("q01", true);
+        map.put("userResponse", choice1);
         return map;
     }
 
