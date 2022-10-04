@@ -4,7 +4,7 @@ import java.util.List;
 public class MultiChoiceQuestion extends AbstractQuestion {
     private List<Choice> choices = new ArrayList<>();
     private String text;
-    private Answer answer;
+    private MultiChoiceAnswer multiChoiceAnswer;
 
     public MultiChoiceQuestion(String id, String name) {
         super(id, name);
@@ -22,8 +22,8 @@ public class MultiChoiceQuestion extends AbstractQuestion {
         this.text = text;
     }
 
-    public void setAnswer(Answer answer) {
-        this.answer = answer;
+    public void setAnswer(MultiChoiceAnswer multiChoiceAnswer) {
+        this.multiChoiceAnswer = multiChoiceAnswer;
     }
 
     public List<Choice> getChoices() {
@@ -34,7 +34,7 @@ public class MultiChoiceQuestion extends AbstractQuestion {
         return this.text;
     }
 
-    public Answer getAnswer() {
-        return this.answer;
+    public MultiChoiceAnswer getAnswer() {
+        return this.multiChoiceAnswer;
     }
 }

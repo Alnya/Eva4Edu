@@ -22,8 +22,8 @@ public class MultiChoiceTest01 {
             println("choice:" + choice.getText() +
                 "  isAnswer?:" + choice.isCorrect());
         }
-        Answer answer = mQuestion.getAnswer();
-        println("answer:" + answer.getText());
+        MultiChoiceAnswer multiChoiceAnswer = mQuestion.getAnswer();
+        println("answer:" + multiChoiceAnswer.getText());
         UserResponse userResponse = (UserResponse) map.get("userResponse");
         List<UserResponse> userResponseList = new ArrayList<>();
         userResponseList.add(userResponse);
@@ -52,8 +52,8 @@ public class MultiChoiceTest01 {
         mQuestion.addChoice(choice1);
         mQuestion.addChoice(choice2);
         mQuestion.addChoice(choice3);
-        Answer answer = new Answer("q01", "ìöÇ¶ÇÕappleÇ≈Ç∑ÅB\n");
-        mQuestion.setAnswer(answer);
+        MultiChoiceAnswer multiChoiceAnswer = new MultiChoiceAnswer("q01", "ìöÇ¶ÇÕappleÇ≈Ç∑ÅB\n");
+        mQuestion.setAnswer(multiChoiceAnswer);
         map.put("multiChoiceQuestion", mQuestion);
 //        AbstractUserResponse userResponse = new AbstractUserResponse("q01", true);
         map.put("userResponse", choice1);

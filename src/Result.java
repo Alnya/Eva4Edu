@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Result {
     private double point = 0;
-    private List<Boolean> isCorrect;
+    private List<Boolean> correct;
 
     public Result() {
 
@@ -17,10 +17,10 @@ public class Result {
     }
 
     public void addCorrect(boolean isCorrect) {
-        this.isCorrect.add(isCorrect);
+        this.correct.add(isCorrect);
     }
 
-    public List<Boolean> getIsCorrect() {
-        return this.isCorrect;
+    public List<Boolean> getCorrect() {
+        return this.correct;
     }
 }

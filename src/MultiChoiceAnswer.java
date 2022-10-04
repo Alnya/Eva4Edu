@@ -1,8 +1,8 @@
-public class Answer {
+public class MultiChoiceAnswer {
     private String questionId;
     private String text;
 
-    public Answer(String questionId, String text) {
+    public MultiChoiceAnswer(String questionId, String text) {
         this.questionId = questionId;
         this.text = text;
     }

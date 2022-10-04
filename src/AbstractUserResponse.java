@@ -1,10 +1,10 @@
 public class AbstractUserResponse implements UserResponse {
     private String questionId;
-    private boolean isCorrect;
+    private boolean Correct;
 
-    public AbstractUserResponse(String questionId, boolean isCorrect) {
+    public AbstractUserResponse(String questionId, boolean Correct) {
         this.questionId = questionId;
-        this.isCorrect = isCorrect;
+        this.Correct = Correct;
     }
 
     @Override
@@ -14,6 +14,6 @@ public class AbstractUserResponse implements UserResponse {
 
     @Override
     public boolean isCorrect() {
-        return this.isCorrect;
+        return this.Correct;
     }
 }
