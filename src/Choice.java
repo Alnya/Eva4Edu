@@ -2,12 +2,12 @@ public class Choice implements UserResponse{
     private String questionId;
     private String text;
 
-    private final boolean isAnswer;
+    private final boolean answer;
 
-    public Choice(String questionId, String text, boolean isAnswer) {
+    public Choice(String questionId, String text, boolean answer) {
         this.questionId = questionId;
         this.text = text;
-        this.isAnswer = isAnswer;
+        this.answer = answer;
     }
 
     public String getQuestionId() {
@@ -19,6 +19,6 @@ public class Choice implements UserResponse{
     }
 
     public boolean isCorrect() {
-        return this.isAnswer;
+        return this.answer;
     }
 }
